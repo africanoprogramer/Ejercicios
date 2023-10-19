@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercio 29</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 90%;
+            margin: 0;
+        }
+        header{
+            text-align: center;
+        }
+        h1, h2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h1{
+            font-size: 3em;
+        }
+        fieldset{
+            margin: 1em auto;
+        }
+        legend{
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        label{
+            font-weight: bold;
+            display: block;
+        }
+        input:focus, select:hover{
+            background-color: yellow;
+        }
+        input:hover, select:hover{
+            background-color: red;
+        }
+        #boton-crear{
+            font-size: 2em;
+            padding: 0.5em;
+        }
+        .inline{
+            display: inline;
+        }
+        .centrado{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>iDESWEB</h1>
+    <h2>Formulario de registro</h2>
+    </header>
+    <form>
+        <fieldset>
+            <legend>¿Quien eres?</legend><br>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" id="apellidos" name="apellidos"><br><br>
+            <label for="email">Correo electronico: </label>
+            <input type="email" id="correo" name="correo"><br><br>
+            <label for="fecha">Fecha de Nacimiento: </label>
+            <select name="dia" id="dia">
+                <option>Dia</option>
+            </select>
+            <select name="mes" id="mes">
+                <option>Mes</option>
+            </select>
+            <select name="año" id="año">
+                <option>Año</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>¿De donde eres?</legend><br>
+            <label for="cuidad">Cuidad: </label>
+            <input type="text" id="cuidad" name="cuidad"><br><br>
+            <label for="codigo Postal">Codigo postal: </label>
+            <input type="text" id="codigo postal" name="codigo postal"><br><br>
+            <label for="pais">Pais: </label>
+            <select name="pais" id="pais">
+                <option>Pais</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>¿Como quieres iniciar sesion?</legend><br>
+            <label for="contraseña">Contraseña: </label>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="repetir">Vuelve a escribir tu contraseña: </label>
+            <input type="password" id="repite password" name="repite password"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Condiciones de registro</legend><br>
+            <label>Deseo recibir ofertas de iDESWEB</label>
+            <input type="radio" id="ofertas1" name="ofertas" value="1">
+            <label for="ofertas1" class="inline">Una vez al dia</label>
+            <input type="radio" id="ofertas2" name="ofertas" value="2">
+            <label for="ofertas2" class="inline">Una vez a la semana</label>
+            <input type="radio" id="ofertas3" name="ofertas" value="3">
+            <label for="ofertas3" class="inline">Una vez al mes</label><br><br>
+            <input type="checkbox" id="acepto" name="acepto">
+            <label for="acepto" class="inline">Acepto el acuerdo de servicios, la declaracion de privacidad y la declaracion de uso de cookies</label><br><br>
+            
+        </fieldset>
+
+        <div class="centrado">
+            <input type="submit" value="Crear cuenta" id="boton-crear">
+        </div>
+    </form>
+</body>
+</html>
